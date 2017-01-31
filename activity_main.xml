@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.gypsysofts.rider.addition.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Btn_calc"
+        android:hint="@string/result_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/reslt_txt"
+        android:textSize="25sp" />
+
+    <Button
+        android:text="@string/calc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Btn_calc"
+        android:textSize="20sp"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginTop="165dp"
+        android:layout_below="@+id/t1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/number_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/t2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/number_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/n_1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Btn_calc"
+        android:layout_toEndOf="@+id/Btn_calc" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/n_2"
+        android:layout_alignBaseline="@+id/t2"
+        android:layout_alignBottom="@+id/t2"
+        android:layout_alignLeft="@+id/n_1"
+        android:layout_alignStart="@+id/n_1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/result"
+        android:layout_alignBaseline="@+id/reslt_txt"
+        android:layout_alignBottom="@+id/reslt_txt"
+        android:layout_toRightOf="@+id/t2"
+        android:layout_toEndOf="@+id/t2"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp" />
+
+</RelativeLayout>
